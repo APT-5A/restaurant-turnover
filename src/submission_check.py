@@ -1,3 +1,4 @@
+
 import sys, pandas as pd
 
 def check(path):
@@ -14,7 +15,7 @@ def check(path):
 
     if problems:
         raise SystemExit("Submission check failed:\n- " + "\n- ".join(problems))
-    print("? Submission file passes format checks.")
+    print("✅ Submission file passes format checks.")
 
 if __name__ == "__main__":
     check(sys.argv[1])
