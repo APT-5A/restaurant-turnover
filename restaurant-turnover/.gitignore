@@ -1,0 +1,9 @@
+data/
+models/
+outputs/
+experiments/runs/
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+.env

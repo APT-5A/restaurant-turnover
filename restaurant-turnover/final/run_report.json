@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-11-12T14:44:26.657639Z",
+  "winning_file": "/content/drive/MyDrive/restaurant-turnover/outputs/submissions/final/FINAL_submission_blend_logspace_calibrated.csv",
+  "sha256": "aba02a916d00992c4c2b0411dc725f998ed45d6e68b0ff0be255c7e84899dbe1",
+  "cv": {
+    "null_baseline_rmse": 21510000,
+    "catboost_cv_mean": 19834354,
+    "lgbm_te_cv_mean": 20061953,
+    "blend_oof_rmse_logspace": 19969728
+  },
+  "blend": {
+    "type": "log-space convex",
+    "catboost_weight": 0.75,
+    "used_calibrated_file": true,
+    "calibration": {
+      "form": "y_log = a*oof_log + b",
+      "a": 1.1153,
+      "b": -2.0594
+    },
+    "clip_percentiles": [
+      0.5,
+      99.5
+    ]
+  },
+  "features": {
+    "date_feats": [
+      "Age_days",
+      "Open_month",
+      "Open_dow"
+    ],
+    "target_encoded": [
+      "City",
+      "Restaurant Theme"
+    ],
+    "one_hot": "low-card categoricals (\u226430 uniques)"
+  },
+  "seeds": {
+    "numpy": 42,
+    "lightgbm": 42,
+    "catboost": 42
+  },
+  "versions": {
+    "python": "3.12.12",
+    "platform": "Linux-6.6.105+-x86_64-with-glibc2.35",
+    "pandas": "2.2.2",
+    "numpy": "2.0.2",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.8"
+  }
+}

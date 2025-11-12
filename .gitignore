@@ -1,0 +1,19 @@
+# data (keep out of repo)
+data/
+data_raw/
+data/processed/
+
+# outputs (keep only final)
+outputs/submissions/*
+!outputs/submissions/final/
+!outputs/submissions/final/FINAL_submission_blend_convex_logspace.csv
+!outputs/submissions/final/run_report.json
+!outputs/submissions/final/requirements.txt
+!outputs/submissions/final/README.md
+
+# notebooks & temp
+.ipynb_checkpoints/
+__pycache__/
+*.log
+*.parquet
+*.zip
