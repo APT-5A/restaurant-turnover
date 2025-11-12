@@ -11,9 +11,16 @@
 - **Repro:** See `03_final_submission.ipynb` and `outputs/submissions/final/`
 
 ## Repo structure
+
+- Final notebook: [`notebooks/03_final_submission.ipynb`](notebooks/03_final_submission.ipynb)
+- Winning CSV: [`outputs/submissions/final/FINAL_submission_blend_convex_logspace.csv`](outputs/submissions/final/FINAL_submission_blend_convex_logspace.csv)
+- Run report: [`outputs/submissions/final/run_report.json`](outputs/submissions/final/run_report.json)
+- Walkthrough PDF: [`docs/Section9_Hackathon_Final_Walkthrough.pdf`](docs/Section9_Hackathon_Final_Walkthrough.pdf)
+
 .
-├─ 02_baseline_model_step_by_step.ipynb
-├─ 03_final_submission.ipynb
+├─ notebooks/
+│ ├─ 02_baseline_model_step_by_step.ipynb
+│ └─ 03_final_submission.ipynb
 ├─ outputs/
 │ └─ submissions/
 │ └─ final/
@@ -21,8 +28,12 @@
 │ ├─ run_report.json
 │ ├─ requirements.txt
 │ └─ README.md
-├─ Section9_Hackathon_Final_Walkthrough.pdf
-└─ .gitignore
+├─ docs/
+│ └─ Section9_Hackathon_Final_Walkthrough.pdf
+├─ models/ # (optional placeholder)
+├─ src/ # (optional helpers)
+├─ .gitignore
+└─ README.md
 
 ## Approach (short)
 - Parsed date (day-first) → `Age_days`, `Open_month`, `Open_dow`
