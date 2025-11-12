@@ -17,3 +17,6 @@ __pycache__/
 *.log
 *.parquet
 *.zip
+environment/
+.venv/
+venv/
