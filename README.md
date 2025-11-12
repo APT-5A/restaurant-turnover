@@ -40,7 +40,3 @@
 ## Notes
 - Raw datasets omitted from repo.
 - Final CSV fingerprinted (SHA256) in `run_report.json`.
-
-git add README.md
-git commit -m "Add portfolio README"
-git push
